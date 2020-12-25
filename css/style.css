@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-Light.eot');
+	src: local('Geometria Light'), local('Geometria-Light'),
+		url('../fonts/Geometria-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-Light.woff') format('woff'),
+		url('../fonts/Geometria-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria.eot');
+	src: local('Geometria'),
+		url('../fonts/Geometria.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria.woff') format('woff'),
+		url('../fonts/Geometria.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-Heavy.eot');
+	src: local('Geometria Heavy'), local('Geometria-Heavy'),
+		url('../fonts/Geometria-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-Heavy.woff') format('woff'),
+		url('../fonts/Geometria-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+html{
+	height: 100%;
+	min-height: 100%
+}
+
+body{
+	min-height: 100%;
+	height: auto;
+	background: 
+		linear-gradient(180deg, rgba(36, 41, 63, 0.3) 0%, rgba(80, 195, 184, 0.3) 25.52%, rgba(88, 223, 206, 0.3) 100%),
+		url(../img/body_bg.jpg) 0 0
+	;
+	color: #fff;
+	font-family: 'Geometria', serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	padding: 90px 0 70px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(37, 43, 64, 0.75);
+}
+header .row{
+	height: 75px;
+}
+
+.my-container{
+	width: calc(100% - 80px);
+}
+
+.logo{
+	display: block;
+	width: 156px;
+	height: 40px;
+	background: url(../img/logo.svg) 0 0  no-repeat;
+}
+
+.clock{
+	min-width: 110px;
+	text-align: center;
+	line-height: 1;
+}
+
+.clock__time{
+	font-weight: bold;
+	font-size: 22px;
+}
+.clock__date{
+	margin-top: 3px;
+	font-weight: 300;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.menu{
+	display: flex;
+	max-width: 900px;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+.menu > li > a{
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 14px;
+	text-decoration: none;
+	height: 23px;
+	line-height: 23px;
+	white-space: nowrap;
+}
+
+.support-link > span{
+	line-height: 23px;
+	display: inline-block;
+	height: 23px;
+	vertical-align: text-top;
+}
+.support-link__icon{
+	width: 23px;
+}
+.support-link__text{
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.sprite-icons{
+	display: block;
+	color: currentColor;
+	max-width: 100%;
+	max-height: 100%;
+}
