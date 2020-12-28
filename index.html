@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <meta name="viewport" content="width=840, initial-scale=1.0"> -->
 
 
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/font-awesome.min.css" >
+    <link rel="stylesheet" href="css/font-awesome-v5.min.css" >
     <link rel="stylesheet" href="css/style.css" >
 
     <title>title</title>
-  </head>
-  <body>
+</head>
+<body>
 
     <header>
         <div class="container-fluid my-container">
@@ -29,12 +29,14 @@
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#folder"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">Настройка доступов</div>
                         <li><a href="http://crm-devel/asc/index">Роли и группы</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#plus"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">Отдел кадров</div>
                         <li><a href="http://crm-devel/poc/index">Управление сотрудниками</a></li>
                         <li><a href="http://crm-devel/poc/adduser">Добавить сотрудника</a></li>
                     </ul>
@@ -42,12 +44,14 @@
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#clipboard"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">Пакеты</div>
                         <li><a href="http://crm-devel/packages/index">Настройка пакетов</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#television"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">Мониторинг</div>
                         <li><a href="http://crm-devel/monitoring/one">ГИБ №1</a></li>
                         <li><a href="http://crm-devel/monitoring/two">ГИБ №2</a></li>
                     </ul>
@@ -55,6 +59,7 @@
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#users"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">Web-почта</div>
                         <li><a href="http://crm-devel/webmail/?b6b385c95882e3a4fbe2ae9851e8aa98" target="_blank">yu.chertilov@globalmonitoring.ru</a></li>
                         <li><a href="http://crm-devel/webmail/?069792567153934fbf4fc8f6c2daf3a1" target="_blank">a.kalinin@globalmonitoring.ru</a></li>
                     </ul>
@@ -62,102 +67,141 @@
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#info_circle"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">Администрирование</div>
                         <li><a href="http://crm-devel/sg/index">Скриптогенератор</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#cloud"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">ГИБ</div>
                         <li><a href="http://crm-devel/infobase/index">Информационные базы</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#user"></use></svg></a>
                     <ul class="submenu">
+                        <div class="submenu__title">Контакты</div>
                         <li><a href="http://crm-devel/contacts/index">Контакты</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#"><span class="support-link"><span class="support-link__icon"><svg class="sprite-icons"><use xlink:href="/img/sprite_icons.svg#phone_circle"></use></svg></span><span class="support-link__text">Техподдержка</span></span></a>
+                    <ul class="submenu">
                         <li><a href="#">Спросить разработчика</a></li>
                         <li><a href="#">Спросить руководителя</a></li>
-                    <ul class="submenu">
                     </ul>
                 </li>
             </ul>
 
-          </div>
-        </div>
-    </header>
-
-
-    <section>
-        <div class="container-fluid my-container" >
-            <h1><i class="fa fa-address-book-o" aria-hidden="true"></i></h1>
-            <h1>
-                <div class="test">
-                            
+            <div class="user-head">
+                <img src="img/che.jpg" class="user-head__avatar">
+                <div>
+                    <div class="user-head__name">
+                        <span>Олеся Бобровникова</span>
+                        <a href="#" class="user-head__link ml-2" title="Выйти"><i class="far fa-times-circle"></i></a>
+                    </div>
+                    <div class="user-head__position">Руководитель отдела продаж</div>
                 </div>
-
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#clipboard" width="23" height="23"  x="0" y="0"></use>
-                </svg>
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#info_circle"></use>
-                </svg>
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#users"></use>
-                </svg>
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#user"></use>
-                </svg>
-            </h1>
-
-            <h1>
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#cloud"></use>
-                </svg>
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#phone_support"></use>
-                </svg>
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#plus"></use>
-                </svg>
-                <svg class="sprite-icons">
-                  <use xlink:href="/img/sprite_icons.svg#television"></use>
-                </svg>
-            </h1>
-
-<h1 style="background: #ccc; padding: 30px;">
-            <svg class="icon">
-              <use xlink:href="/img/sprite.svg#clipboard"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#cloud"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#foder"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#info_circle"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#phone_circle"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#plus"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#television"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#user"></use>
-            </svg><svg class="icon">
-              <use xlink:href="/img/sprite.svg#users"></use>
-            </svg></h1>
-
+            </div>
 
         </div>
-    </section>
-
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <!-- <script src="js/jquery-3.5.1.slim.min.js"></script> -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    </div>
+</header>
 
 
-  </body>
+<section>
+    <div class="container-fluid my-container" >
+        <h1><i class="fa fa-address-book-o" aria-hidden="true"></i></h1>
+        <h1>
+            <div class="test">
+
+            </div>
+
+            <svg class="sprite-icons">
+              <use xlink:href="/img/sprite_icons.svg#clipboard" width="23" height="23"  x="0" y="0"></use>
+          </svg>
+          <svg class="sprite-icons">
+              <use xlink:href="/img/sprite_icons.svg#info_circle"></use>
+          </svg>
+          <svg class="sprite-icons">
+              <use xlink:href="/img/sprite_icons.svg#users"></use>
+          </svg>
+          <svg class="sprite-icons">
+              <use xlink:href="/img/sprite_icons.svg#user"></use>
+          </svg>
+      </h1>
+
+      <h1>
+        <svg class="sprite-icons">
+          <use xlink:href="/img/sprite_icons.svg#cloud"></use>
+      </svg>
+      <svg class="sprite-icons">
+          <use xlink:href="/img/sprite_icons.svg#phone_support"></use>
+      </svg>
+      <svg class="sprite-icons">
+          <use xlink:href="/img/sprite_icons.svg#plus"></use>
+      </svg>
+      <svg class="sprite-icons">
+          <use xlink:href="/img/sprite_icons.svg#television"></use>
+      </svg>
+  </h1>
+
+  <h1 style="background: #ccc; padding: 30px;">
+    <svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#clipboard"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#cloud"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#foder"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#info_circle"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#phone_circle"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#plus"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#television"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#user"></use>
+  </svg><svg class="icon">
+      <use xlink:href="/img/sprite_icons.svg#users"></use>
+  </svg>
+
+  <i class="fa fa-user"></i> <!-- uses solid style -->
+  <i class="far fa-user"></i> <!-- uses regular style -->
+  <i class="fal fa-user"></i> <!-- uses light style -->
+  <!--brand icon-->
+  <i class="fab fa-github-square"></i> <!-- uses brands style -->
+</h1>
+
+
+</div>
+</section>
+
+
+<footer>
+    <div class="container-fluid my-container">
+      <div class="row align-items-center justify-content-between">
+            <div class="menu-dashboard">
+                <a href="#"><i class="far fa-calendar"></i></a>
+                <a href="#" class="active"><i class="fas fa-list-ul"></i></a>
+                <a href="#"><i class="fas fa-globe-americas"></i></a>
+                <a href="#"><i class="far fa-comment-alt"></i></a>
+                <a href="#"><i class="far fa-calendar"></i></a>
+                <a href="#"><i class="far fa-bell"></i></a>
+                <a href="#"><i class="fas fa-history"></i></a>
+                <a href="#"><i class="far fa-edit"></i></a>
+            </div>
+      </div>
+  </div>
+</footer>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<!-- <script src="js/jquery-3.5.1.slim.min.js"></script> -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
 </html>

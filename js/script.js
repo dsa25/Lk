@@ -7,3 +7,8 @@ function mainClock(){
 var mainClockId = setInterval(mainClock, 1000);
 
 mainClock();
+
+// сохранить изменения группы
+$('body').on('click', '.menu-dashboard a', function() {
+	$(this).toggleClass('active');
+});
