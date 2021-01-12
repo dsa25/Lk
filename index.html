@@ -1,13 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="viewport" content="width=840, initial-scale=1.0"> -->
-
-
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/font-awesome-v5.min.css" >
+    <link rel="stylesheet" href="css/jquery-ui.min.css" >
     <link rel="stylesheet" href="css/style.css" >
 
     <title>title</title>
@@ -16,7 +14,7 @@
 
     <header>
         <div class="container-fluid my-container">
-          <div class="row align-items-center justify-content-between">
+          <div class="row align-items-center justify-content-between flex-nowrap">
 
             <a href="/" class="logo"></a>
 
@@ -99,6 +97,7 @@
                 <div>
                     <div class="user-head__name">
                         <span>Олеся Бобровникова</span>
+                        <a href="#" class="user-head__link ml-2" title="Настройки пользователя"><i class="fas fa-info-circle"></i></a>
                         <a href="#" class="user-head__link ml-2" title="Выйти"><i class="far fa-times-circle"></i></a>
                     </div>
                     <div class="user-head__position">Руководитель отдела продаж</div>
@@ -110,98 +109,148 @@
 </header>
 
 
-<section>
-    <div class="container-fluid my-container" >
-        <h1><i class="fa fa-address-book-o" aria-hidden="true"></i></h1>
-        <h1>
-            <div class="test">
 
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="dashboard">
+    <div class="container-fluid my-container">
+      <div class="row align-items-center justify-content-between">
+
+        <div class="dashboard__list">
+
+            <div class="dashboard__list-one d-flex justify-content-between align-items-start">
+
+                <div class="board active board-calendar" data-idboard="1">
+                    <div class="board__title">
+                        <div>Календарь</div>
+                        <div class="board__action-btn">
+                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="my-datepicker" id="calendar-dashboard"></div>
+                </div>
+
+                <div class="board active board-tasks" data-idboard="2">
+                    <div class="board__title">
+                        <div>Задачи</div>
+                        <div class="board__action-btn">
+                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora amet ratione, quis facere magnam assumenda accusamus nam officiis cupiditate est, itaque velit unde repellat atque vitae quaerat ipsum dolore perferendis.</p>
+                </div>
+
+                <div class="board active board-phone" data-idboard="3">
+                    <div class="board__title">
+                        <div>GM Phone</div>
+                        <div class="board__action-btn">
+                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quas quibusdam deserunt nulla autem ducimus eveniet quo earum eum voluptatum quidem sequi, tenetur corporis similique. Aperiam facilis quisquam, dolore laudantium.</p>
+                </div>
             </div>
 
-            <svg class="sprite-icons">
-              <use xlink:href="/img/sprite_icons.svg#clipboard" width="23" height="23"  x="0" y="0"></use>
-          </svg>
-          <svg class="sprite-icons">
-              <use xlink:href="/img/sprite_icons.svg#info_circle"></use>
-          </svg>
-          <svg class="sprite-icons">
-              <use xlink:href="/img/sprite_icons.svg#users"></use>
-          </svg>
-          <svg class="sprite-icons">
-              <use xlink:href="/img/sprite_icons.svg#user"></use>
-          </svg>
-      </h1>
+            <div class="dashboard__list-two d-flex justify-content-between align-items-start">
+                <div class="board active board-chat" data-idboard="4">
+                    <div class="board__title">
+                        <div>Чат</div>
+                        <div class="board__action-btn">
+                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?</div>
 
-      <h1>
-        <svg class="sprite-icons">
-          <use xlink:href="/img/sprite_icons.svg#cloud"></use>
-      </svg>
-      <svg class="sprite-icons">
-          <use xlink:href="/img/sprite_icons.svg#phone_support"></use>
-      </svg>
-      <svg class="sprite-icons">
-          <use xlink:href="/img/sprite_icons.svg#plus"></use>
-      </svg>
-      <svg class="sprite-icons">
-          <use xlink:href="/img/sprite_icons.svg#television"></use>
-      </svg>
-  </h1>
+                <div class="board active board-notice" data-idboard="5">
+                    <div class="board__title">
+                        <div>Уведомления</div>
+                        <div class="board__action-btn">
+                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?
+                </div>
+                <div class="board active board-history" data-idboard="6">
+                    <div class="board__title">
+                        <div>Общая история</div>
+                        <div class="board__action-btn">
+                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div> 
 
-  <h1 style="background: #ccc; padding: 30px;">
-    <svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#clipboard"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#cloud"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#foder"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#info_circle"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#phone_circle"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#plus"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#television"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#user"></use>
-  </svg><svg class="icon">
-      <use xlink:href="/img/sprite_icons.svg#users"></use>
-  </svg>
+                ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?</div>
 
-  <i class="fa fa-user"></i> <!-- uses solid style -->
-  <i class="far fa-user"></i> <!-- uses regular style -->
-  <i class="fal fa-user"></i> <!-- uses light style -->
-  <!--brand icon-->
-  <i class="fab fa-github-square"></i> <!-- uses brands style -->
-</h1>
+                <div class="board active board-workField" data-idboard="7">
+                <div class="board__title">
+                    <div>Рабочее поле</div>
+                    <div class="board__action-btn">
+                        <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
+                        <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
+                        <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+                 ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?</div>
+            </div>
 
 
-</div>
+        </div>
+
+      </div>
+    </div>
 </section>
+
+
+
+
+
 
 
 <footer>
     <div class="container-fluid my-container">
       <div class="row align-items-center justify-content-between">
-            <div class="menu-dashboard">
-                <a href="#"><i class="far fa-calendar"></i></a>
-                <a href="#" class="active"><i class="fas fa-list-ul"></i></a>
-                <a href="#"><i class="fas fa-globe-americas"></i></a>
-                <a href="#"><i class="far fa-comment-alt"></i></a>
-                <a href="#"><i class="far fa-calendar"></i></a>
-                <a href="#"><i class="far fa-bell"></i></a>
-                <a href="#"><i class="fas fa-history"></i></a>
-                <a href="#"><i class="far fa-edit"></i></a>
-            </div>
+        <div class="menu-dashboard">
+            <a data-idboard="1" href="#" class="active" title="Календарь"><i class="far fa-calendar-alt"></i></a>
+            <a data-idboard="2" href="#" class="active" title="Задачи"><i class="fas fa-list-ul"></i></a>
+            <a data-idboard="3" href="#" class="active" title="Звонки"><i class="fas fa-globe-americas"></i></a>
+            <a data-idboard="4" href="#" class="active" title="Чат"><i class="far fa-comment-alt"></i></a>
+            <a data-idboard="5" href="#" class="active" title="Уведомления"><i class="far fa-bell"></i></a>
+            <a data-idboard="6" href="#" class="active" title="История"><i class="fas fa-history"></i></a>
+            <a data-idboard="7" href="#" class="active" title="Рабочее поле"><i class="far fa-edit"></i></a>
+            <a data-idboard="0" href="#" class="" title="По умолчанию"><i class="fab fa-windows"></i></a>
+        </div>
       </div>
-  </div>
+    </div>
 </footer>
 
 <script src="js/jquery-3.5.1.min.js"></script>
-<!-- <script src="js/jquery-3.5.1.slim.min.js"></script> -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>
 
 
 </body>
 </html>
+
+
