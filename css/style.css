@@ -404,7 +404,8 @@ footer{
     display: block;
     padding: 0;
     background: none;
-    box-shadow: 7px 7px 10px -7px #000;
+    box-shadow: none;
+    width: 100%;
 }
 
 .my-datepicker .ui-datepicker .ui-datepicker-header {
@@ -471,7 +472,7 @@ footer{
 
 .my-datepicker .ui-datepicker-calendar {
     border-radius: 2px;
-    background-color: rgba(26, 43, 68, .7);
+    background-color: transparent;
     /* width: 263px; 31.10 c0f*/
     width: 100%;
     margin-bottom: 0;
@@ -482,7 +483,7 @@ footer{
     line-height: 15px;
     vertical-align: middle;
     padding-bottom: 6px;
-    background: rgb(44, 57, 85);
+    background: transparent;
 }
 
 .my-datepicker .ui-datepicker a:hover {
@@ -525,7 +526,6 @@ footer{
 .my-datepicker .ui-datepicker td a {
     border: 0;
     background: transparent;
-    text-align: center;
     color: #fff;
 }
 
