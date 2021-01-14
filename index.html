@@ -110,23 +110,6 @@
 
 
 
-
-
-
-
-<div id="test1" style="    margin: 30px auto;
-    width: 300px;
-    height: 150px;
-    resize: both;
-    border: 1px solid red;
-    padding: 10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis alias rerum officiis recusandae, quasi officia excepturi vitae aperiam voluptates facilis dolor quod, necessitatibus quos eaque neque obcaecati. Voluptatibus, alias, doloribus?</div>
-
-
-
-
-
-
-
 <section class="dashboard">
     <div class="container-fluid my-container">
       <div class="row align-items-center justify-content-between">
@@ -139,14 +122,14 @@
                     <div class="board__title">
                         <div>Календарь</div>
                         <div class="board__action-btn">
-                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
-                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
-                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                            <a href="javascript:void(0);" class="link" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);" class="link"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);" class="link link-danger-h board__close"><i class="fas fa-times"></i></a>
                         </div>
                     </div>
                     <div class="my-datepicker" id="calendar-dashboard"></div>
                     <div class="text-right mr-3 mt-2">
-                        <a href="javascript:void(0);" class="board__link">Показать события <i class="ml-2 fas fa-angle-down"></i></a>
+                        <a href="javascript:void(0);" class="board__link link">Показать события <i class="ml-2 fas fa-angle-down"></i></a>
                     </div>
                 </div>
 
@@ -154,34 +137,130 @@
                     <div class="board__title">
                         <div>Задачи</div>
                         <div class="board__action-btn">
-                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
-                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
-                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                            <a href="javascript:void(0);" class="link" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);" class="link"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);" class="link link-danger-h board__close"><i class="fas fa-times"></i></a>
                         </div>
                     </div>
-                    <div class="board__table th">
-                        <div class="25">Описание</div>
-                        <div class="20">Постановка</div>
-                        <div class="5">Начало</div>
-                        <div class="5">Окончание</div>
-                        <div class="15">Важность</div>
-                        <div class="15">Назначено</div>
-                        <div class="15">Место</div>
-                        <div class="15">Действие</div>
-                    </div>
-                    <div class="board__table board__table-red">
-                        <div class="25">Звонок клиенту</div>
-                        <div class="20">24.11.2020  8:00</div>
-                        <div class="5">12:00</div>
-                        <div class="5">12:00</div>
-                        <div class="15">Высокая</div>
-                        <div class="15">Система</div>
-                        <div class="15">Офис</div>
-                        <div class="15">
-                            <a href="javascript:void(0);" class="board__btn">Начать</a>
-                            <a href="javascript:void(0);" class="board__link"><i class="ml-1 far fa-edit"></i></a>
-                            <a href="javascript:void(0);" class="board__link"><i class="ml-1 far fa-trash-alt"></i></a>
+                    <div class="my_scroll board__scroll">
+                                            
+                        <div class="board__table th">
+                            <div class="w-15">Описание</div>
+                            <div class="w-15">Постановка</div>
+                            <div class="w-10">Начало</div>
+                            <div class="w-10">Окончание</div>
+                            <div class="w-10">Важность</div>
+                            <div class="w-10">Назначено</div>
+                            <div class="w-15">Место</div>
+                            <div class="w-15">Действие</div>
                         </div>
+                        <div class="board__table board__table-danger">
+                            <div class="w-15">Звонок клиенту</div>
+                            <div class="w-15">24.11.2020  8:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">Высокая</div>
+                            <div class="w-10">Система</div>
+                            <div class="w-15">Офис</div>
+                            <div class="w-15">
+                                <a href="javascript:void(0);" class="board__btn">Начать</a>
+                                <a href="javascript:void(0);" class="board__link  link-hs ml-1 link-success-h" title="Редактировать"><i class="far fa-edit"></i></a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-danger-h" title="Удалить"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="board__table board__table-warning">
+                            <div class="w-15">Встреча</div>
+                            <div class="w-15">24.11.2020  8:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">Высокая</div>
+                            <div class="w-10">Смарчук Н.ю</div>
+                            <div class="w-15">Кувандык</div>
+                            <div class="w-15">
+                                <a href="javascript:void(0);" class="board__btn">Начать</a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-success-h" title="Редактировать"><i class="far fa-edit"></i></a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-danger-h" title="Удалить"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-15">Звонок клиенту</div>
+                            <div class="w-15">24.11.2020  8:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">Высокая</div>
+                            <div class="w-10">Система</div>
+                            <div class="w-15">Офис</div>
+                            <div class="w-15">
+                                <a href="javascript:void(0);" class="board__btn">Начать</a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-success-h" title="Редактировать"><i class="far fa-edit"></i></a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-danger-h" title="Удалить"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="board__table board__table-danger">
+                            <div class="w-15">Звонок клиенту</div>
+                            <div class="w-15">24.11.2020  8:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">Высокая</div>
+                            <div class="w-10">Система</div>
+                            <div class="w-15">Офис</div>
+                            <div class="w-15">
+                                <a href="javascript:void(0);" class="board__btn">Начать</a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-success-h" title="Редактировать"><i class="far fa-edit"></i></a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-danger-h" title="Удалить"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="board__table board__table-success">
+                            <div class="w-15">Встреча</div>
+                            <div class="w-15">24.11.2020  8:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">Высокая</div>
+                            <div class="w-10">Смарчук Н.ю</div>
+                            <div class="w-15">Кувандык</div>
+                            <div class="w-15">
+                                <a href="javascript:void(0);" class="board__btn">Начать</a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-success-h" title="Редактировать"><i class="far fa-edit"></i></a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-danger-h" title="Удалить"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="board__table board__table-success">
+                            <div class="w-15">Встреча</div>
+                            <div class="w-15">24.11.2020  8:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">Высокая</div>
+                            <div class="w-10">Смарчук Н.ю</div>
+                            <div class="w-15">Кувандык</div>
+                            <div class="w-15">
+                                <a href="javascript:void(0);" class="board__btn">Начать</a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-success-h" title="Редактировать"><i class="far fa-edit"></i></a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-danger-h" title="Удалить"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="board__table board__table-success">
+                            <div class="w-15">Встреча</div>
+                            <div class="w-15">24.11.2020  8:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">12:00</div>
+                            <div class="w-10">Высокая</div>
+                            <div class="w-10">Смарчук Н.ю</div>
+                            <div class="w-15">Кувандык</div>
+                            <div class="w-15">
+                                <a href="javascript:void(0);" class="board__btn">Начать</a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-success-h" title="Редактировать"><i class="far fa-edit"></i></a>
+                                <a href="javascript:void(0);" class="board__link link-hs ml-1 link-danger-h" title="Удалить"><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <a href="javascript:void(0);" class="ml-auto board__link link"><i class="mr-2 fas fa-plus-circle"></i> Создать задачу</a>
+                        <div class="mr-3 ml-3">
+                            <input type="checkbox" class="checkbox" id="checkbox-show-time">
+                            <label for="checkbox-show-time" class="link board__link">Показать свободное время</label>
+                        </div>
+                        <a href="javascript:void(0);" class="board__link link">Показать за сегодня <i class="ml-2 fas fa-angle-down"></i></a>
                     </div>
                 </div>
 
@@ -189,9 +268,9 @@
                     <div class="board__title">
                         <div>GM Phone</div>
                         <div class="board__action-btn">
-                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
-                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
-                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                            <a href="javascript:void(0);" class="link" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);" class="link"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);" class="link link-danger-h board__close"><i class="fas fa-times"></i></a>
                         </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quas quibusdam deserunt nulla autem ducimus eveniet quo earum eum voluptatum quidem sequi, tenetur corporis similique. Aperiam facilis quisquam, dolore laudantium.</p>
@@ -203,9 +282,9 @@
                     <div class="board__title">
                         <div>Чат</div>
                         <div class="board__action-btn">
-                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
-                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
-                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                            <a href="javascript:void(0);" class="link" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);" class="link"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);" class="link link-danger-h board__close"><i class="fas fa-times"></i></a>
                         </div>
                     </div>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?</div>
@@ -214,35 +293,209 @@
                     <div class="board__title">
                         <div>Уведомления</div>
                         <div class="board__action-btn">
-                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
-                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
-                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                            <a href="javascript:void(0);" class="link" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);" class="link"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);" class="link link-danger-h board__close"><i class="fas fa-times"></i></a>
                         </div>
                     </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?
+                    <div class="my_scroll board__scroll">
+                        <div class="board__table th">
+                            <div class="w-25">Постановка</div>
+                            <div class="w-25">Исполнитель</div>
+                            <div class="w-25">Задача</div>
+                            <div class="w-25">Комментарий</div>
+                        </div>
+                        <div class="board__date">24.11.2020</div>
+                        <div class="board__table board__table-success">
+                            <div class="w-25">24.11.2020 17:24</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Смотри на обороте</div>
+                        </div>
+                        <div class="board__table board__table-danger">
+                            <div class="w-25">24.11.2020 17:24</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Смотри на обороте</div>
+                        </div>
+                        <div class="board__table board__table-warning">
+                            <div class="w-25">24.11.2020 17:24</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Смотри на обороте</div>
+                        </div>
+                        <div class="board__table board__table-danger">
+                            <div class="w-25">24.11.2020 17:24</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Смотри на обороте</div>
+                        </div>
+                        <div class="board__table board__table-warning">
+                            <div class="w-25">24.11.2020 17:24</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Смотри на обороте</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="mr-1">
+                            <input type="checkbox" class="checkbox" id="checkbox-show-people">
+                            <label for="checkbox-show-people" class="link board__link">Показать список сотрудников</label>
+                        </div>
+                        <div class="m-auto">
+                            <input type="radio" class="radio" id="radio-person" name="radio-notice">
+                            <label for="radio-person" class="link board__link">Личные</label>
+                        </div>
+                        <div class="ml-1">
+                            <input type="radio" class="radio" id="radio-people" name="radio-notice">
+                            <label for="radio-people" class="link board__link">Сотрудники</label>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="board active board-history" data-idboard="6">
                     <div class="board__title">
                         <div>Общая история</div>
                         <div class="board__action-btn">
-                            <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
-                            <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
-                            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                            <a href="javascript:void(0);" class="link" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);" class="link"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);" class="link link-danger-h board__close"><i class="fas fa-times"></i></a>
                         </div>
                     </div> 
-
-                ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?</div>
-
-                <div class="board active board-workField" data-idboard="7">
-                <div class="board__title">
-                    <div>Рабочее поле</div>
-                    <div class="board__action-btn">
-                        <a href="javascript:void(0);" style="display: none;"><i class="fas fa-minus"></i></a>
-                        <a href="javascript:void(0);"><i class="far fa-window-maximize"></i></a>
-                        <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+                    <div class="my_scroll board__scroll">
+                        <div class="board__table th">
+                            <div class="w-25">Задача</div>
+                            <div class="w-25">Исполнитель</div>
+                            <div class="w-20">Время</div>
+                            <div class="w-15">Номер</div>
+                            <div class="w-10">Офис</div>
+                        </div>
+                        <div class="board__date">24.11.2020</div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                        <div class="board__date">24.11.2020</div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-25">Мониторинг</div>
+                            <div class="w-25">Стратьев М.А.</div>
+                            <div class="w-20">12:20-13:00</div>
+                            <div class="w-15">14881337</div>
+                            <div class="w-10">№3</div>
+                        </div>
+                    </div>
+                    <div class="text-right mt-3">
+                        <a href="javascript:void(0);" class="board__link link">Показать все <i class="ml-2 fas fa-angle-down"></i></a>
                     </div>
                 </div>
-                 ipsum dolor sit amet consectetur adipisicing elit. Numquam, similique, deleniti. Reiciendis nobis perspiciatis error esse provident laudantium adipisci dolores est pariatur ipsam accusantium odit fugit temporibus sint quod aperiam, cupiditate rerum doloribus, exercitationem iste veniam laborum. Voluptatum quasi eum autem odit fugit aspernatur illo, magnam aliquam corporis eos nisi?</div>
+
+                <div class="board active board-workField" data-idboard="7">
+                    <div class="board__title">
+                        <div>Рабочее поле</div>
+                        <div class="board__action-btn">
+                            <a href="javascript:void(0);" class="link" style="display: none;"><i class="fas fa-minus"></i></a>
+                            <a href="javascript:void(0);" class="link"><i class="far fa-window-maximize"></i></a>
+                            <a href="javascript:void(0);" class="link link-danger-h board__close"><i class="fas fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="my_scroll board__scroll">
+                        <div class="searsh-field">
+                            <span><i class="fas fa-search"></i></span>
+                            <input type="text" placeholder="Поиск">
+                        </div>
+                        <div class="board__table">
+                            <div class="w-75">
+                                <div>Название заметки</div>
+                                <div class="board__table-text">Текст заметки</div>
+                            </div>
+                            <div class="w-25 text-right">17.11.2020</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-75">
+                                <div>Название заметки</div>
+                                <div class="board__table-text">Текст заметки</div>
+                            </div>
+                            <div class="w-25 text-right">17.11.2020</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-75">
+                                <div>Название заметки</div>
+                                <div class="board__table-text">Текст заметки</div>
+                            </div>
+                            <div class="w-25 text-right">17.11.2020</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-75">
+                                <div>Название заметки</div>
+                                <div class="board__table-text">Текст заметки</div>
+                            </div>
+                            <div class="w-25 text-right">17.11.2020</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-75">
+                                <div>Название заметки</div>
+                                <div class="board__table-text">Текст заметки</div>
+                            </div>
+                            <div class="w-25 text-right">17.11.2020</div>
+                        </div>
+                        <div class="board__table">
+                            <div class="w-75">
+                                <div>Название заметки</div>
+                                <div class="board__table-text">Текст заметки</div>
+                            </div>
+                            <div class="w-25 text-right">17.11.2020</div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="javascript:void(0);" class="board__link link board__btn-add" title="Добавить"><i class="fas fa-plus-circle"></i></a>
+                    </div>
+                </div>
+
             </div>
 
 

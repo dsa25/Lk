@@ -13,7 +13,6 @@ mainClock();
 
 $('body').on('click', '.menu-dashboard a', function() {
 	var idboard = $(this).attr('data-idboard');
-	console.log(idboard);
 	if($(this).hasClass('active')){
 		$('.board[data-idboard='+idboard+']').removeClass('active');
 		if(idboard == 0){$('.board').removeClass('default');}
@@ -23,6 +22,12 @@ $('body').on('click', '.menu-dashboard a', function() {
 		if(idboard == 0){$('.board').addClass('default');}		
 		$(this).addClass('active');
 	}
+});
+
+$('body').on('click', 'a.board__close', function() {
+	var idboard = $(this).closest('.board').attr('data-idboard');
+	$('.board[data-idboard="'+idboard+'"]').removeClass('active');
+	$('.menu-dashboard a[data-idboard="'+idboard+'"]').removeClass('active');
 });
 
 
