@@ -24,7 +24,7 @@
 
 html{
 	height: 100%;
-	min-height: 100%
+	min-height: 100%;
 }
 
 body{
@@ -64,6 +64,7 @@ footer{
 
 .my-container{
 	width: calc(100% - 80px);
+	margin: 0 auto;
 }
 
 .logo{
@@ -264,7 +265,7 @@ footer{
 	height: calc(100vh - 160px);
 	width: 100%;
 	padding: 25px 0 20px 0;
-	border: 1px solid red;
+	min-height: 540px;
 }
 .dashboard__list-one,
 .dashboard__list-two{
@@ -379,6 +380,9 @@ footer{
 	text-align: center;
 	line-height: 1;
 	padding: 15px;
+}
+.td01{
+	white-space: nowrap;
 }
 .board__action-btn{
 	position: absolute;
@@ -863,25 +867,101 @@ footer{
 	.menu {
 		max-width: 700px;
 	}
+	.my-datepicker .ui-datepicker-title {
+		padding: 4px 10px;
+	}
+	.my-datepicker .ui-datepicker-title span{font-size: 11px;}
+	.my-datepicker .ui-datepicker-calendar span {
+	    font-size: 10px;
+	    line-height: 10px;
+	}
+	.my-datepicker .ui-datepicker td a {
+		max-width: 26px;
+		font-size: 11px;
+		line-height: 13px;
+	}
+	.board__table{
+		padding: 0 0 0 5px;
+	}
+	.board__table.th {
+		font-size: 9.3px;
+		padding: 0;
+	}
+	.board__table:not(.th) {
+	    font-size: 9.3px;
+	}
+	.board__table > div{
+		padding: 4px 2px;
+	}
+	.board__table::before{
+		width: 4px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	body{
+		padding: 75px 0 65px;
+	}
 	.my-container{
 		width: calc(100% - 30px);
 	}
+	header .row{height: 60px;}
+	.logo{
+		width: 120px;
+		height: 30.77px;
+		background-size: 100%;
+	}
+	.clock__time{font-size: 17px;}
+	.clock__date{font-size: 10px;}
+	.menu > li > a {line-height: 60px;}
+	.menu > li > a svg {height: 20px;}
+	.submenu{top:60px;}
+	.support-link__icon {height: 20px;}
+	.sprite-icons {
+		height: 20px;
+		width: 20px;
+	}
+	.user-head__avatar {
+	    width: 30px;
+	    height: 30px;
+	    margin-right: 12px;
+	}
+	.menu-dashboard{
+		height: 45px;
+		line-height: 45px;
+	}
+	.menu-dashboard a {font-size: 18px;}
 	.dashboard__list{
-		padding: 25px 0 20px 0;
+		padding: 0;
+	    height: calc(100vh - 142px);
 	}
 	.dashboard__list-one,
 	.dashboard__list-two{
-		height: calc(50% - 20px);
+		height: calc(50% - 7.5px);
 	}
 	.dashboard__list-one{
-		margin-bottom: 40px;
+		margin-bottom: 15px;
+	}
+	.board__title{
+		font-size: 13px;
+		padding: 10px 15px;
+	}
+	.board__action-btn{
+		right: 12px;
+		top: 8px;
+	}
+	.board__action-btn a{
+		font-size: 11px;
+	}
+	.board__scroll {
+	    max-height: calc(100% - 86px);
 	}
 	.board-tasks{
-		width: calc(44.565217391304346% - 7px);
+		width: calc(44.92% - 7.5px);
 		margin: 0 15px 0 0;
 	}
 	.board-phone{
-		width: calc(29.891304347826086% - 7px);
+		width: calc(29.891304347826086% - 7.5px);
 	}
 	.board-calendar,
 	.board-chat,
@@ -892,10 +972,10 @@ footer{
 	}
 	.board-workField{margin-right: 0;}
 	.board-tasks{
-		left: 25.3%;
+		left: 25.25%;
 	}
 	.board-tasks.default{
-		left: 25.3%!important;
+		left: 25.25%!important;
 	}
 	.board-phone{
 		left: 70.6%;
@@ -904,24 +984,22 @@ footer{
 		left: 70.6%!important;
 	}
 	.board-notice{
-		left: 25.3%;
+		left: 25.25%;
 	}
 	.board-notice.default{
-		left: 25.3%!important;
+		left: 25.25%!important;
 	}
 	.board-history{
-		left: 50.71%;
+		left: 50.5%;
 	}
 	.board-history.default{
-		left: 50.71%!important;
+		left: 50.5%!important;
 	}
 	.board-workField{
-		left: 75.8%;
+		left: 75.75%;
 	}
 	.board-workField.default{
-		left: 75.8%!important;
+		left: 75.75%!important;
 	}
-}
 
-@media only screen and (max-width: 1366px) {
 }

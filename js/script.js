@@ -11,6 +11,11 @@ var mainClockId = setInterval(mainClock, 1000);
 mainClock();
 
 
+$('body').on('click', '.my-datepicker', function() {
+	console.log('dfs');
+});
+
+
 $('body').on('click', '.menu-dashboard a', function() {
 	var idboard = $(this).attr('data-idboard');
 	if($(this).hasClass('active')){
