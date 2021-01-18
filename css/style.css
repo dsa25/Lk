@@ -32,10 +32,12 @@
 	--bg_header: rgba(37, 43, 64, 0.75);
     --bg_footer: #283749;
     --bg_board: #283749;
+    --bg_logo: url(../img/logo.svg) 0 0  no-repeat;
     --board_shadow: 0px 3px 22.5px 1.5px #252B40;
     --main_color_style: #58dfce;
     --main_border_color: #58dfceb3;
     --shadow_inset_color: #58dfce1a;
+    --bg_submenu: #252d42;
     --danger_color: #d12f46;
     --warning_color: #f5ef52;
     --success_color: #61c75c;
@@ -43,20 +45,24 @@
 	--scroll_border: 0.5px solid rgba(0, 255, 224, 0.5);
 	--checkbox: #235762;
 	--checkbox-checked: #4ec0b6;
-	--checkbox_arow: #3a767b;
-	--checkbox_arow-checked: var(--main_color, #fff);
+	--checkbox_check: #3a767b;
+	--checkbox_check-checked: var(--main_color, #fff);
 	--radio_color: var(--main_color_style, #58dfce);
 }
 
 .theme_light:root {
-	--bg_body: 
-		/*linear-gradient(to bottom, rgba(36, 41, 63, 0.3) 0%, rgba(80, 195, 184, 0.3) 25.52%, rgba(88, 223, 206, 0.3) 100%) 0 0 no-repeat fixed,*/
-		url(../img/body_bg_light.jpg) 0 0 repeat scroll
-	;
+	--bg_body: url(../img/body_bg_light.jpg) 0 0 repeat scroll;
+    --bg_logo: url(../img/logo_light.svg) 0 0  no-repeat;
 	--main_color: #40414b;
 	--bg_header: #d1fff9;
     --bg_footer: #d1fff9;
     --bg_board: #d1fff9;
+    --main_border_color: #8ffff1;
+    --bg_submenu: #fefefe;
+    --checkbox: #D3F6F3;
+    --checkbox-checked: #b7f1ea;
+    --checkbox_check: #a2ede4;
+    --checkbox_check-checked: #6be2d4;
 }
 
 html{
@@ -108,7 +114,7 @@ footer{
 	display: block;
 	width: 156px;
 	height: 40px;
-	background: url(../img/logo.svg) 0 0  no-repeat;
+	background: var(--bg_logo, url(../img/logo.svg) 0 0  no-repeat);
 }
 
 .clock{
@@ -171,7 +177,7 @@ footer{
 	top: 75px;
 	left: 50%;
 	transform: translateX(-50%);
-	background: #252d42;
+	background: var(--bg_submenu, #252d42);
 	border: 1px solid var(--main_border_color, #58dfceb3);
 	box-shadow: 0px 3px 7px var(--shadow_inset_color, #58dfce1a);
 }
@@ -661,7 +667,7 @@ footer{
 	z-index: 2;
 	font-weight: 500;
 	font-size: 10.5px;
-	background: #283749;
+	background: var(--bg_board, #283749);
 }
 .board__table:not(.th){
 	position: relative;
@@ -692,7 +698,7 @@ footer{
 .board-workField .searsh-field{
 	position: sticky;
 	top: 0;
-	background: #283749;
+	background: var(--bg_board, #283749);
 	z-index: 2;
 }
 .searsh-field{
@@ -876,14 +882,14 @@ footer{
 .checkbox + label::after {
 	width: 7px;
     height: 7px;
-    background: var(--checkbox_arow, #3a767b);
+    background: var(--checkbox_check, #3a767b);
 	border-radius: 50%;
 	z-index: 2;
 	left: -0.3px;
 	transition: left linear 0.25s;
 }
 .checkbox:checked + label::after {
-    background: var(--checkbox_arow-checked, #fff);
+    background: var(--checkbox_check-checked, #fff);
     left: 6.3px;
 }
 .radio:checked + label::after {
