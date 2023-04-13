@@ -21,6 +21,6 @@
   </tr>
    <tr>
     <td valign="top"><img src="default.jpg" width="580"></td>
-    <td valign="top"><img src="lime.jpg" width="400"></td>
+    <td valign="top"><img src="lime.jpg" width="580"></td>
   </tr>
  </table>
