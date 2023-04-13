@@ -1,0 +1,23 @@
+{
+  "name": "lk-fmk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dashboard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsa25/lk-fmk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsa25/lk-fmk/issues"
+  },
+  "homepage": "https://github.com/dsa25/lk-fmk#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
