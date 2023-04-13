@@ -17,10 +17,10 @@
  <table>
    <tr>
     <th>theme default</th>
-    <td valign="top"><img src="default.jpg" width="580"></td>
+    <td valign="top"><img src="default.jpg" width="800"></td>
   </tr>
    <tr>
     <th>theme lime</th>
-    <td valign="top"><img src="lime.jpg" width="400"></td>
+    <td valign="top"><img src="lime.jpg" width="800"></td>
   </tr>
  </table>
