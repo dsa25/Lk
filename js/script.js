@@ -50,7 +50,7 @@ function setDatePicker(id, other_style = false, wrap_id) {
       firstDay: 1,
       dateFormat: "dd.mm.y",
       showOn: "button",
-      buttonImage: "/img/calendar_icon.svg",
+      buttonImage: "./img/calendar_icon.svg",
       buttonImageOnly: true,
       buttonText: "Выбрать дату",
       prevText: '<i class="fas fa-angle-left"></i>',
