@@ -14,7 +14,7 @@ let liSmiles = ""
 let fragment = document.createDocumentFragment()
 // for (var i = 0; i < namedEmoji.length; i++) {
 for (var i = 0; i <= 5; i++) {
-  liSmiles += `<li data-smile="${namedEmoji[i]}"><img src="/img/emojis/${namedEmoji[i]}.png"></li>`
+  liSmiles += `<li data-smile="${namedEmoji[i]}"><img src="./img/emojis/${namedEmoji[i]}.png"></li>`
 }
 
 document
